@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Hallooo</title>
-	
-</head>
-<body>
-	
-</body>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SpaceX Mars tracker</title>
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.typekit.net/bav5xax.css">
+		<link rel="icon" type="image/png" href="images/favicon.png"/>
+		<script type="text/javascript" src="scripts/script.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	</head>
+	<body>
+
+		<!-- top sectie, logo, titel etc... -->
+
+		<section class="logo-container">
+			<figure>
+				<img src="images/SpaceXLogoRebrandWhite.png" alt="Space X logo" />
+			</figure>
+		</section>
+		<h1>
+			Space X mars tracker
+		</h1>
+
+		<!-- Hier zijn de grafieken weergeven -->
+
+		<section>
+			<!-- <p>beschrijving van de grafiek?</p> -->
+			<div>
+				<canvas class="chart-1 all-charts" id="chart-1"></canvas>	
+			</div>
+			<!-- <p>beschrijving van de grafiek?</p> -->
+			<div>
+				<canvas class="chart-2 all-charts" id="chart-2"></canvas>	
+			</div>
+			<!-- <p>beschrijving van de grafiek?</p> -->
+			<div class="last-graphic">
+				<canvas class="chart-3 all-charts" id="chart-3"></canvas>
+			</div>
+		</section>
+
+		<!-- Footerbalk spacex -->
+
+		<section class="footer">
+			<p>Space X tracker copyright 2021.</p>
+		</section>
+
+	</body>
 </html>

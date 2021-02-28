@@ -1,0 +1,58 @@
+/*Mobile CSS*/
+body {
+	font-family: all-round-gothic, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;
+}
+
+.logo-container {
+	background-color: #204553;
+	margin:0;
+}
+
+
+figure {
+	margin:0;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+
+.logo-container img {
+	width: 40%;
+	margin:0;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	font-weight: 400;
+	font-size: 3vh;
+	color: #204553;
+}
+
+/*Grafieken styling*/
+
+div{
+    width: 50%;
+    margin:auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+}
+
+.last-graphic {
+	margin-bottom: 30px;
+}
+
+/*footer styling*/
+
+.footer {
+	background-color: #204553;
+	margin:0;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
