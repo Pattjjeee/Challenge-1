@@ -41,7 +41,6 @@ var chart = new Chart(ctx, {
    
     options: {
 
-    },
     }
 });
 
