@@ -2,34 +2,27 @@
 
 var ctx = document.getElementById('chart-1').getContext('2d');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
     type: 'bar',
-
-    // The data for our dataset
     data: {
-        labels: ['2013', '2014', '2015', '2015', '2016', '2017'],
+        labels: ['4 uur', '5 uur', '6 uur', '7 uur', '8 uur', '9 uur'],
         datasets: [{
-            label: 'Tesla stock 2013-2017',
+            label: 'Temperatuur in het schip',
             backgroundColor: '#48839d',
-            data: [15, 20, 25, 20, 30, 45]
+            data: [9, 11, 10, 9, 14, 10]
         }]
     },
-
-    // Configuration options go here
-    options: {}
+    options: {
+    }
 });
 
 // Grafiek 2
 
 var ctx = document.getElementById('donut').getContext('2d');
 var chart = new Chart(ctx, {
-   
     type: 'doughnut',
-
     data: {
         labels: ['Aantal ruimte maaltijden', 'Flessen ruimte sap', 'Ruimte noodles'],
         datasets: [{
-            label: '',
             data: [1820, 1430, 450],
             backgroundColor: [
             '#48839d',
@@ -37,10 +30,22 @@ var chart = new Chart(ctx, {
             ],
         }]
     },
-
-   
     options: {
-
     }
 });
 
+// Grafiek 3
+
+var ctx = document.getElementById('chart-3').getContext('2d');
+var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['10 min', '1 uur', 'huidig'],
+        datasets: [{
+            label: 'Snelheid',
+            data: [800, 1400, 4000],
+        }]
+    },
+    options: {
+    }
+});
