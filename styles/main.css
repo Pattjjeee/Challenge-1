@@ -1,43 +1,63 @@
 /*Mobile CSS*/
+
 body {
+	width: 100vw;
+	margin: 0;
 	font-family: all-round-gothic, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+
+}
+
+main {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+	"logo"
+	"hero"
+	"title"
+	"first-chart"
+	"second-chart"
+	"third-chart"
+	"footer"
+}
+
+header {
+	background-color: #204553;
 	margin: 0;
 }
 
-.logo-container {
-	background-color: #204553;
-	margin:0;
-}
-
-
 figure {
-	margin:0;
+	margin: 0;
 	display: flex;
 	justify-content: center;
 	padding: 15px;
 }
 
-.logo-container img {
-	width: 40%;
-	margin:0;
+header img {
+	height: 30px;
+	margin: 0;
 }
 
-.hero > img {
+.hero {
 	width: 100%;
-	height: 20%;
+	height: 250px;
+	background-image: url(../images/1608405878-SpaceX.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 h1{
 	display: flex;
 	justify-content: center;
 	font-weight: 400;
-	font-size: 3vh;
+	font-size: 1,3em;
 	color: #204553;
 }
 
-/*Grafieken styling..*/
+/*Grafieken styling*/
 
 div{
     width: 50%;
@@ -48,21 +68,44 @@ div{
     border-radius: 20px;
 }
 
-.first-graphic {
-	margin-bottom: 30px;
+
+
+/*Toekennen van grid-area's*/
+
+header {
+	grid-area: logo;
 }
 
-.last-graphic {
-	margin-bottom: 30px;
+.hero {
+	grid-area: hero;
 }
 
-.BG {
-	background-color: #204553;
+h1 {
+	grid-area: title;
+}
+
+.first-chart {
+	grid-area: first-chart;
+	margin-bottom: 30px;
+	padding: 5% 8% 5% 8%;
+}
+
+.second-chart{
+	grid-area: second-chart;
 	padding-top: 3%;
 	padding-bottom: 8%;
+	padding: 5% 8% 5% 8%;
 }
 
+.last-chart {
+	grid-area: third-chart;
+	margin-bottom: 30px;
+	padding: 5% 8% 5% 8%;
+}
 
+.footer {
+	grid-area: footer;
+}
 
 /*footer styling*/
 
@@ -73,3 +116,98 @@ div{
 	display: flex;
 	justify-content: center;
 }
+
+
+/*----------------Tablet style---------------------*/
+
+@media only screen and (min-width: 845px) /*and (max-width: 1000px)*/{
+
+	header {
+		/*height: 50px;*/
+		display: flex;
+		justify-content: center;
+	}
+
+	figure {
+	}
+
+	header img {
+	height: 30px;
+}
+
+	.hero {
+		height: 300px;
+	}
+
+	.first-chart {
+		grid-area: first-chart;
+		margin-bottom: 30px;
+		padding: 5% 15% 5% 15%;
+	}
+
+	.second-chart{
+		grid-area: second-chart;
+		padding-top: 3%;
+		padding-bottom: 8%;
+		padding: 5% 15% 5% 15%;
+	}
+
+	.last-chart {
+		grid-area: third-chart;
+		margin-bottom: 30px;
+		padding: 5% 15% 5% 15%;
+	}
+
+}
+
+/*----------------Laptop style---------------------*/
+
+@media only screen and (min-width: 1001px) /*and (max-width: 1000px)*/{
+
+	main {
+	padding: 0 10vw;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"logo logo"
+	"hero hero"
+	"title title"
+	"first-chart second-chart"
+	"third-chart third-chart"
+	"footer footer"
+  }
+
+	header img {
+	height: 35px;
+	}
+
+  canvas  {
+  	height: 450px;
+  }
+
+
+}
+
+ /*----------------Desktop style---------------------*/
+
+@media only screen and (min-width: 1450px){
+
+	main {
+	padding: 0 10vw;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"logo logo logo"
+	"hero hero hero"
+	"title title title"
+	"first-chart second-chart third-chart"
+	"footer footer footer"
+  }
+
+}
+
+
+
+
+
+
+
+
